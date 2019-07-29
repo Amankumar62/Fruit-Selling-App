@@ -1,0 +1,90 @@
+body{
+   background:url("b.png") center center no-repeat fixed;
+   background-size: cover;
+}
+img
+{
+	width:30%;
+  height:15em;
+}
+img:hover{
+  transform:scale(1.5,1.5);
+  transition: 1s;
+}
+p{
+  text-align: left;
+  padding-top: 1.2em;
+}
+hr{
+  width:50em
+}
+figcaption{
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 1.2em;
+  font-family: 'Merriweather', serif;
+}
+#fruitimg{
+float: left;
+width: 40%;
+
+}
+#images{
+  height:20em;
+  width:100em;
+}
+#para{
+   text-align: center;
+  width:60%;
+  height:15em;
+}
+#ext{
+  float: inherit;
+}
+#desc{
+  font-size:1.1em;
+  font-family: 'Raleway', sans-serif;
+}
+#price{
+  font-size:1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+strong{
+  font-size:1.5em;
+}
+button{
+  width:5em;
+  height:5em;
+  outline: none;
+  border-radius: 50px;
+  background: linear-gradient(aqua,lightgreen);
+  color: white;
+}
+button:hover{
+  background:linear-gradient(white,gray);
+  color: black;
+}
+@media screen and (max-width:826px){
+  img{
+    width:50%;
+    margin-left:25%;
+  }
+}
+@media screen and (max-width:667px){
+  img{
+    width:75%;
+    margin-left:15%;
+  }
+}
+@media screen and (max-width:416px){
+  img{
+    width:85%;
+    margin-left:5%;
+  }
+}
+@media screen and (max-width:320px){
+  img{
+    width:95%;
+    margin-left:2.5%;
+  }
+}

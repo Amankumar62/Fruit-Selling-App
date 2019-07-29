@@ -1,0 +1,123 @@
+<html ng-app="">
+<head>
+<style>
+body{
+  background: linear-gradient(red,lightgreen);
+}
+div{
+background:rgba(188, 193, 197,0.4);
+float:left;
+ width:57.14%;
+ border :2px solid rgba(188, 193, 197,0);
+padding:2px;
+}
+div.name{
+ border-top-right-radius:20px;
+ border-top-left-radius:20px;
+ }
+ div.submit{
+ border-bottom-right-radius:20px;
+ border-bottom-left-radius:20px;
+ text-align:center;
+ }
+label{
+margin-top:6px;
+float:left;
+height:35px;
+margin-left:20px;
+width:40%;
+text-align:left;
+}
+input.name{
+margin-top:8px;
+}
+label.name{
+margin-top:14px;
+}
+input{
+height:35px;
+border : 2px solid rgba(188, 193, 197,0.2);
+border-radius:4px;
+float:left;
+width:40%;
+}
+input.button{
+height:15px;
+width:15px;
+margin-left:1px;
+float:left;
+}
+label.button{
+width:55px;
+float:left;
+margin-left:2px;
+text-align:left;
+}
+span{
+display:inline;
+float:right;
+text-align:left;
+width:30%;
+margin-right:20px;
+margin-top:8px;
+}
+
+</style>
+<script src="angular.min.js"></script>
+<title>
+Sign Up
+</Title>
+</head>
+<body>
+
+<form style="background-color:rgba(232, 140, 140,0);float:right; margin-top:20px; width:70%; text-align:right; border-radius:20px ">
+<h1 style="margin-top:8px;margin-right:450px;" align="center">Sign Up</h1>
+<div id="name" class = "name">
+<label for"nameTextBox" id="nameLabel" class="name" >Name</label>
+<input required id="nameTextBox" placeholder="Enter Full Name" class="name"  type="text" ng-model="nameTextBox">
+</div>
+<span ng-bind = "nameTextBox"></span>
+<div id="username">
+<label for = "usernameTextBox"id="usernameLabel">Username</label>
+<input required id="usernameTextBox" placeholder="Enter Username"ng-model="usernameTextBox">
+</div>
+<span ng-bind = "usernameTextBox"></span>
+<div id="dob">
+<label id="dobLabel">Date Of Birth</label>
+<input required id="dobTextBox" type="date" ng-model="dobTextBox">
+</div>
+<span ng-bind = "dobTextBox"></span>
+<div id="email">
+<label for = "emailTextBox" id="emailLabel">Email</label>
+<input type="text" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Enter valid email" id="emailTextBox"ng-model="emailTextBox" required>
+</div>
+<span ng-bind = "emailTextBox"></span>
+<div>
+<label>Country</label>
+<input class="form-control" type="text" name="Name" ng-model="country" placeholder="India" />
+</div>
+<div id="mobile">
+<label id="mobileLabel">Mobile Number</label>
+<input required id="mobileTextBox" placeholder="Enter Mobile No." maxlength="10" type="number"ng-model="mobileTextBox">
+</div>
+<span ng-bind = "mobileTextBox"></span>
+<div>
+<label>Gender</label>
+<input class="button" type="radio" value="male" name="gender" checked="checked">	<label class="button">Male</label>
+<input class="button" value="female" name="gender" type="radio">	<label class="button">Female</label>
+<input class="button" value="Other" name="gender" type="radio">		<label class="button">Others</label>
+</div>
+<div id="password">
+<label id="passwordLabel">Password</label>
+<input required id="passwordTextBox" placeholder="Enter Password" type="password">
+</div>
+<div id="confirmPassword">
+<label id="confirmPasswordLabel">Password</label>
+<input required id="confirmPasswordTextBox" placeholder="Reenter Password" type="password">
+</div>
+<div style="height:45px"id="submit" class="submit" >
+<button type="button" style="height:35px; border-radius:20px;width:30%"id="sublitButton" type="Submit">Register</button>
+</div>
+</form>
+</body>
+</html>
